@@ -1,6 +1,6 @@
-class ItemsController < ApplicationController
+class BanksController < ApplicationController
   def index
-    @bank = Bank.new
+    @banks = Bank.new
   end
 
   def create
@@ -13,4 +13,5 @@ private
   def bank_params
     params.require(:bank).permit(:bank_name, :joined_in)
   end
+
 end

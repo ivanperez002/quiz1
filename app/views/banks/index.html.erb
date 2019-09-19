@@ -1,0 +1,9 @@
+<h1>Banking 101!!!</h1>
+
+<div class="booyah-box col-10 offset-1">
+  <%= simple_form_for @bank do |f| %>
+    <%= f.input :bank_name %>
+    <%= f.input :joined_in %>
+    <%= f.submit 'Add', class: 'btn btn-primary' %>
+  <% end %>
+</div>
